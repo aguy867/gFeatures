@@ -60,7 +60,7 @@ console.log("Scanning music database...");
 fs.readdir(__dirname.replace("\\", "/") + '/data', (err, files) => {
     for(var i = 0; i < files.length; i++){
         var file = files[i];
-        muzik.push({"position": json[0][__dirname.replace("\\", "/") + "/data/" + file], "file": "data/" + file});
+        muzik.push({"position": i+1/*json[0][__dirname.replace("\\", "/") + "/data/" + file]*/, "file": "data/" + file});
     }
 
     /*
